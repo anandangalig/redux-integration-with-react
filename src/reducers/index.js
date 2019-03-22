@@ -11,7 +11,7 @@ const songsReducer = () => {
 }
 
 // some action might be performed
-const selectedSongReducer = (selectedSong = null, action) => {
+const selectedSongReducer = (selectedSong = null, action) => {    
     if(action.type === 'SONG_SELECTED') {
         return action.payload;
     }
